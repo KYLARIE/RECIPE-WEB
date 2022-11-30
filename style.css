@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    min-height: 100vh;
+}
+
+.fa{
+    font-size: 100px;
+}
+  
+.example{
+    width: 200px;
+    padding-top: 24px;
+    padding-right: 5px;
+    display: inline-block;
+}
+
+form.example input[type=text] {
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid rgb(0, 0, 0);
+    float: left;
+    width: 80%;
+
+}
+
+form.example button {
+    float: left;
+    padding: 5px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    border-left: 0px ;
+    border: 1px solid rgb(0, 0, 0);
+    border-left: none; 
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #c9c9c9;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+nav{
+    min-height: 30px;
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+    padding-left: 30px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #020202;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* Social Media Icons */
+
+.fa{
+    color: black;
+    
+}
+
+.fa:hover{
+    color: rgb(73, 146, 255);
+}
+
+
+/* Featured Recipes */
+
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.featured{
+    height: 80%;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(206, 206, 206);
+}
+
+.featured h1{
+    padding-left: 10px;
+}
+.row{
+    
+    display: flex;
+    
+}
+
+.row h1{
+    padding-left: 40px;
+    margin: auto;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.featured-col{
+    flex-basis: 30%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 12px;
+    margin-right: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-col img{
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.layer{
+    position: relative;
+    text-align: center;
+   
+}
+
+.layer h3{
+    padding: 10px;
+    font-weight: 30px;
+    color: rgb(29, 29, 29);
+    font-size: 20px;
+    background-color: #ffffffab;
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+    right: 16px; 
+    transition: 0.3s;
+}
+
+.layer h3:hover{
+    background-color: #000000ab;
+    color: white;
+}
+
