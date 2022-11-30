@@ -11,7 +11,9 @@
     line-height: 25px;
 }
 
-
+.recipe ul li{
+    margin-left: 20px;
+}
 .recipe h1{
     text-align: center;
     padding-bottom: 20px;
